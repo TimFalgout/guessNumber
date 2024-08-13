@@ -1,0 +1,68 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B2A59B;
+}
+
+.header-container {
+    background-color: #B2A59B;
+    margin-top: 0;
+}
+
+.text-h3 h3 {
+    line-height: 1.5;
+}
+
+.instructions {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    padding-left: 60px;
+}
+
+/* Hide the questions, answer buttons, and guesses remaining before game starts */
+.hidden {
+    display: none;
+}
+/* Changing the <h3> font and background when the guess is correct */
+.question-correct {
+    background-color: #3b71ca;
+    font-size: 5rem;
+    border-radius: 20px;
+    color: #fbfbfb;
+    padding: 20px;
+}
+
+/* Moving the div that tells user there number was guessed. On click for button "you got it" */
+.move {
+    bottom: 55%;
+    position: fixed;
+    -webkit-animation: run 5s linear infinite;
+    animation: run 5s linear infinite;
+}
+
+@-webkit-keyframes run {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 900px);
+    }
+    100% {
+        left: 0;    
+    }
+}
+
+@keyframes run {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 900px);
+    }
+    100% {
+        left: 0;    
+    }
+}
